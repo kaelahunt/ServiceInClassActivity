@@ -12,6 +12,7 @@ object TimerInfo {
     private val _currentTime = MutableStateFlow(0)
     val currentTime = _currentTime.asStateFlow()
 
+
     fun postNewTime(currentTime: Int) {
         _currentTime.value = currentTime
     }
